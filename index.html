@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e89ba48f82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>MC</h2>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/maria-cavalcante-92303b22b/" target="_blank">Linkedin</a></li>
+                <li><a href="https://www.github.com/mrsapple" target="_blank">Github</a></li>
+                <li><a href="#" target="_blank">Projetos</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h2>Maria Cavalcante</h2>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" class="icon">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" class="aboutme" id="about">
+                <p>Olá! Sou Maria Cavalcante, tenho 21 anos e estou terminando meu curso técnico em desenvolvimento de sistemas. Gosto muito de estudar sobre vários assuntos e várias linguagens. No momento estou estudando HTML, CSS, JavaScript e Flutter. </p>
+            </div>
+
+            <div class="form">
+                <form>
+                    <input type="email" name="email" placeholder="Digite seu E-mail">
+                    <button class="button">enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

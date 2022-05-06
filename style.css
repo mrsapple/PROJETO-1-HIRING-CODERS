@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@300&family=Pompiere&family=Poppins:wght@100;200&family=Roboto:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #a09038;
+}
+body{
+    background-image: url(imagens/foto4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+}
+header { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 1px solid #a09038; */
+    /* box-shadow: 1px 1px 10px 5px; */
+    border-bottom: 3px ridge #a09038;
+    margin-bottom: 60px
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.animation{
+    transition: 300ms;
+}
+.active{
+    display: block !important;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    padding: 20px;
+    /* border-bottom: 1px dashed #a09038;
+    border-left: 1px dashed #a09038; */
+}
+/* header ul li:last-child{
+    border-right: 1px dashed #a09038;
+} */
+
+
+.container{
+    text-align: center;
+}
+.icon{
+    font-size: 30px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+.links ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header ul li a{
+    transition: 300ms ease;
+}
+header ul li a:hover{
+    color: #c0a717;
+}
+.logo h2{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.logo h2:hover{
+    color: #c0a717;
+}
+.name h2{
+    font-size: 50px;
+}
+.name h5{
+    font-size: 25px;
+}
+.aboutme p{
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.form input{
+    width: 50%;
+    height: 30px;
+    color: #000;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+}
+.button{
+    width: 15%;
+    height: 30px;
+    color: #091623;
+    background-color: #a09038;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms ease;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+}
+.button:hover{
+    background-color: #c0a717;
+}
+/* .button{
+    width: 15%;
+    height: 30px;
+    color: #091623;
+    background: linear-gradient(to right black 50%, rgb(146, 96, 96) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+.button:hover{
+    background-position: left bottom;
+} */
+@media only screen and (max-width: 1500px){
+    main{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 480px){
+    .name h2{
+        font-size: 40px;
+
+    }
+    .name h5{
+        font-size: 25px;
+    }
+    .aboutme p{
+        max-width: 80%;
+        text-align: justify;
+    }
+   
+}
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+}
